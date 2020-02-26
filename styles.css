@@ -1,0 +1,222 @@
+#bot{
+    height:20px;
+    width:20px;
+}
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #a7a7a7;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #e2e2e2;
+    display: block;
+    transition: 0.3s;
+    
+  }
+  
+  .sidebar a:hover {
+    color: #5308fe;
+    font-size: 27px;
+   
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #5308fe;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    
+  }
+  .openbtn:hover {
+    border-radius: 10px;
+  border:none;
+}
+      
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  #titulo{
+      padding: 0%;
+  }
+
+  #gui{
+      position: absolute;
+      font-size: 60px;
+      font-family: 'Red Hook';
+      color: #5308fe;
+      padding-left: 18%;
+      margin-top: -2%;
+      animation: mover 2s;
+  }
+
+  #fundo{
+      background-repeat: no-repeat;
+      background-size: 100%;
+  }
+
+  #brabo{
+    position: absolute;
+    font-size: 30px;
+    color: #5308fe;
+    padding-left: 18%;
+    font-family: brush script std;
+    margin-top: 5%;
+  }
+
+  @keyframes mover{
+    from{padding-left:50%;}
+    to{padding-left: 18%;}
+  }
+
+#segundo{
+  
+}
+
+#paragrafo1{
+  font-size: 20px;
+  padding-top: 55%;
+  padding-left: 20%;
+  position: absolute;
+  animation: tex 3s;
+}
+
+@keyframes tex{
+  from{padding-left:0%;}
+  to{padding-left:20%;}
+}
+
+#tabelinha{
+  
+}
+
+#ft{
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  padding-top: 50%;
+  padding-left: 60%;
+  animation: cefe 3s;
+}
+
+@keyframes cefe{
+  from{padding-left:80%;}
+  to{padding-left:60%;}
+}
+
+#simb{
+  width: 50px;
+  height: 50px;
+  padding-top: 15%;
+  padding-left: 95%;
+  position: fixed;
+}
+
+#email{
+  padding-top: 70%;
+  padding-left: 40%;
+  animation: sob 4s;
+}
+
+@keyframes sob{
+  from:{padding-top:100%;}
+  to:{padding-top:70%;}
+}
+
+#nome,#e,#comentarios{
+  border-color:#5308fe;
+  border-radius:10px;
+  background-color: white;
+}
+
+#enviar,#apagar{
+  border-color:#5308fe;
+  border-radius:10px;
+  background-color: white;
+}
+
+#enviar:hover,#apagar:hover{
+  border-color:#5308fe;
+  border-radius:10px;
+  cursor: pointer;
+  background-color: #a7a7a7;
+}
+
+body {
+  overflow: hidden; 
+}
+
+ 
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#5308fe; 
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+#loaderz{
+  width: 80px;
+  height: 80px;
+  animation: logo 1s infinite;
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  16% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.5);
+    opacity: 0.7;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; 
+  } 
+} 
+
