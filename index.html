@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+      <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="pginicial.css">
+        <link rel="shortcut icon" href="g2.png">
+        <title>Guilherme Cordeiro</title> 
+      </head> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+      <body id="fundo" background="ibagem.jpg">
+          <div id="preloader">
+            <div class="inner">
+               <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+               <div class="loader">
+                     <img src="g2.png" id="loaderz">               
+               </div>
+            </div>
+        </div>
+          <div id="mySidebar" class="sidebar">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
+            <a href="#">Sobre</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Contatos</a>
+          </div> 
+          <ul id="titulo">         
+          <li> <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+           </li>
+           <li id="gui"> <p>Guilherme Cordeiro</p> </li>
+           <li id="brabo"><p id="massa">o brabo</p></li>
+          </div>
+          </ul>
+          <div id="segundo">
+            <table id="tabelinha">
+            <th> <p id="paragrafo1">Olá, sou o Guilherme dos Santos Cordeiro,<br> tenho 16 anos de idade, atualmente estudo no<br> Cefet-MG cursando Informática no Ensino médio.</p> </th>
+            <th>  <img src="cefeto.png" id="ft"> </th>
+          </table>
+          </div>
+          <a href="#titulo"> <img src="g2.png" id="simb" title="Voltar ao início"> </a>
+          <form action="pginicial.html" method="POST" id="email"> 
+            <input type="hidden" name="recipient" value="guilhermedossantoscordeiro13@gmail.com">
+            <input type="hidden" name="redirect" value="pginicial.html"> 
+            <input type="hidden" name="subject" value="Site do Guilherme">
+            <input type="hidden" name="email" value="guilhermedossantoscordeiro13@gmail.com">   
+             <b> <p>Me envie um email!</p> </b>
+            <b> <p> 
+            Nome:<br /> 
+            <input type="text" size="30" name="nome" id="nome"> 
+            </p> </b>   
+            
+            <b> <p>
+            E-mail:<br /> 
+            <input type="text" size="30" name="replyto" id="e"> 
+            </p> </b>  
+            
+            <b> <p> 
+            Comentários:<br /> 
+            <input type="text" size="35" name="Comentarios" id="comentarios"> 
+            </p> </b>  
+            
+            <b> <p> 
+            <input type="submit" name="BTEnvia" value="Enviar" id="enviar"> 
+            <input type="reset" name="BTApaga" value="Apagar" id="apagar"> </p> </b>
+            </form>
+            
+          
+          
+          <script>
+           $(window).on('load', function () {
+         $('#preloader .inner').fadeOut();
+         $('#preloader').delay(350).fadeOut('slow'); 
+         $('body').delay(350).css({'overflow': 'visible'});
+          })
+          function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+        </body>
+    </html>
